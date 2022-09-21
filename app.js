@@ -22,6 +22,7 @@ app.use((req, res, next) => {
     return next(new ApiError(404, "Resource not found"));
 });
 
+
 // define error-handling middleware last, after other app.use() and routes calls
 app.use((error, req, res, next) => {
     // Middleware xử lý lỗi tập trung.
